@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>Git Flame</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+<body class="w3-content w3-black" style="max-width:1500px;">
+
+<!-- Header with Slideshow -->
+<header class="w3-display-container w3-center">
+  
+  <div class="mySlides w3-animate-opacity">
+    
+  </div>
+  
+</header>
+
+<!-- The App Section -->
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Coid-19 Tracker</b></h1>
+      <h1 class="w3-xxxlarge w3-text-green"><b>Description</b></h1>
+      <p><span class="w3-xlarge"></span> That App has become one of the world's most authoritative sources for the latest coronavirus numbers and trends. The app has filled an information vacuum, providing the most up-to-date, comprehensive picture of the virus' global scope and spread.</p>
+      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="location.href='https://drive.google.com/file/d/1QzZ3_i_miQeo05nLwb_Peb7zt5-giQ6V/view?usp=sharing';">
+        <i class="fa fa-download"></i> Download App
+      </button>
+      <p>Available for <i class="fa fa-android w3-xlarge w3-text-green"></i></p>
+    </div>
+    <div class="w3-col l4 m6"> 
+        <img src="/covid-19.jpg" class="w3-image w3-margin-top" width="335" height="471">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <p class="w3-medium">Powered by <a href="https://allaboutpythonjava2019.blogspot.com/" target="_blank" class="w3-hover-text-green">All About Python And Java</a></p>
+</footer>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
